@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T830435)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-#  How to export a PDF document to a multi-page tiff and bitmap images 
+#  PDF Document API - Export a PDF document to Multi-Page Tiff and Bitmap Images 
 <p>To accomplish this task:</p>
 
 <p>Create a <a href="https://documentation.devexpress.com/OfficeFileAPI/DevExpress.Pdf.PdfDocumentProcessor.class"><u>PdfDocumentProcessor</u></a> instance and load the required PDF document using the overloaded <a href="https://documentation.devexpress.com/OfficeFileAPI/DevExpress.Pdf.PdfDocumentProcessor.LoadDocument.method(miP5YA)"><u>PdfDocumentProcessor.LoadDocument </u></a> method.</p>
