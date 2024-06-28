@@ -5,9 +5,7 @@
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
 #  PDF Document API - Export a PDF Document to Multi-Page Tiff and Bitmap Images 
-To accomplish this task
-
-Create a [PdfDocumentProcessor](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Pdf.PdfDocumentProcessor) instance and load the required PDF document using the overloaded [PdfDocumentProcessor.LoadDocument](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Pdf.PdfDocumentProcessor.LoadDocument.overloads) method.
+To accomplish this task, create a [PdfDocumentProcessor](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Pdf.PdfDocumentProcessor) instance and load the required PDF document using the overloaded [PdfDocumentProcessor.LoadDocument](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Pdf.PdfDocumentProcessor.LoadDocument.overloads) method.
 
 To export a page to a bitmap image, call the [PdfDocumentProcessor.CreateBitmap](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Pdf.PdfDocumentProcessor.CreateBitmap.overloads) method using the page number and the **largestEdgeLength** parameter measured in pixels. The latter parameter determines the output image height for pages in the portrait orientation and width - for landscape pages.
   
