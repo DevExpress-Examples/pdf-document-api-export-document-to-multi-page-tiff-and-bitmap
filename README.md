@@ -4,12 +4,14 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-#  PDF Document API - Export a PDF Document to Multi-Page Tiff and Bitmap Images 
+#  PDF Document API - Export a PDF Document to Image Formats
 To accomplish this task, create a [PdfDocumentProcessor](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Pdf.PdfDocumentProcessor) instance and load the required PDF document using the overloaded [PdfDocumentProcessor.LoadDocument](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Pdf.PdfDocumentProcessor.LoadDocument.overloads) method.
 
-To export a page to a bitmap image, call the [PdfDocumentProcessor.CreateBitmap](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Pdf.PdfDocumentProcessor.CreateBitmap.overloads) method using the page number and the **largestEdgeLength** parameter measured in pixels. The latter parameter determines the output image height for pages in the portrait orientation and width - for landscape pages.
+To export a page to a bitmap image, call the [PdfDocumentProcessor.CreateBitmap](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Pdf.PdfDocumentProcessor.CreateBitmap.overloads) method using the page number and the `largestEdgeLength` parameter measured in pixels. The latter parameter determines the output image height for pages in the portrait orientation and width - for landscape pages.
   
 To export a page to a multi-page tiff image, call one of the [PdfDocumentProcessor](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Pdf.PdfDocumentProcessor.CreateTiff.overloads) overloaded methods using, for example, the file path where the converted image will be located, the **largestEdgeLength** parameter measured in pixels and page numbers.
+
+Call the [PdfDocumentProcessor.CreateSvgImage](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Pdf.PdfDocumentProcessor.CreateSvgImage.overloads) method to export a PDF page to an SVG image. The `largestEdgeLength` parameter determines the output image’s height for pages in the portrait orientation and width for landscape pages. You can also use the `PdfPageRenderingParameters` instance as a method parameter to export an image with a predefined DPI.
 
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
