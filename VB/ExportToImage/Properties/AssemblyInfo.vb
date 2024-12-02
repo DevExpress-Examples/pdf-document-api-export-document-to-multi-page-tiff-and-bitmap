@@ -1,13 +1,11 @@
-﻿Imports System.Reflection
-Imports System.Runtime.CompilerServices
+Imports System.Reflection
 Imports System.Runtime.InteropServices
-<Assembly: AssemblyTrademark("")>
-<Assembly: AssemblyCulture("")>
 
+<Assembly:AssemblyTrademark("")>
+<Assembly:AssemblyCulture("")>
 ' Setting ComVisible to false makes the types in this assembly not visible 
 ' to COM components.  If you need to access a type in this assembly from 
 ' COM, set the ComVisible attribute to true on that type.
-<Assembly: ComVisible(False)>
-
+<Assembly:ComVisible(False)>
 ' The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("dec8d06d-cd64-4ad1-920b-a83ab3bd5128")>
+<Assembly:Guid("dec8d06d-cd64-4ad1-920b-a83ab3bd5128")>
