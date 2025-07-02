@@ -6,7 +6,6 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AssemblyTitle>ExportToTiff</AssemblyTitle>
     <Product>ExportToTiff</Product>
-    <Copyright>Copyright ©  2018</Copyright>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
   </PropertyGroup>
