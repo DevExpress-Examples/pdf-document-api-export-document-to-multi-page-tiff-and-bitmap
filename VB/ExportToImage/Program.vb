@@ -28,6 +28,7 @@ Namespace ExportToImage
                 ' Save the images
                 svgImage.Save("MySvg", DXImageFormat.Svg)
             End Using
+
             Process.Start(New ProcessStartInfo("Image.tiff") With {.UseShellExecute = True})
         End Sub
     End Class
