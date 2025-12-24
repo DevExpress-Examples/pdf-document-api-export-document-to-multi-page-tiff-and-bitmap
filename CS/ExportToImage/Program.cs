@@ -1,5 +1,6 @@
 ﻿using DevExpress.Drawing;
 using DevExpress.Pdf;
+using System.Diagnostics;
 
 namespace ExportToImage
 {
@@ -15,11 +16,11 @@ namespace ExportToImage
             using (PdfDocumentProcessor processor = new PdfDocumentProcessor())
             {
 
-                // Load a document. 
-                processor.LoadDocument("..\\..\\Document.pdf");
+                // Load a document.
+                processor.LoadDocument("Document.pdf");
 
                 // Export pages to a multi-page tiff image.
-                processor.CreateTiff("..\\..\\Image.tiff", pageNumbers, 96);
+                processor.CreateTiff("Image.tiff", pageNumbers, 96);
 
                 for (int i = 1; i <= processor.Document.Pages.Count; i++)
                 {
@@ -28,7 +29,7 @@ namespace ExportToImage
                     DXImage image = processor.CreateDXBitmap(i, largestEdgeLength);
 
                     // Save the bitmaps.
-                    image.Save("..\\..\\MyBitmap" + i + ".bmp", DXImageFormat.Bmp);
+                    image.Save("MyBitmap" + i + ".bmp", DXImageFormat.Bmp);
                 }
 
                 PdfPageRenderingParameters renderingParameters = PdfPageRenderingParameters.CreateWithResolution(72f);
@@ -36,8 +37,9 @@ namespace ExportToImage
                 DXImage svgImage = processor.CreateSvgImage(pageNumbers[0], renderingParameters);
 
                 // Save the images
-                svgImage.Save("..\\..\\MySvg", DXImageFormat.Svg);
+                svgImage.Save("MySvg", DXImageFormat.Svg);
             }
+            Process.Start(new ProcessStartInfo("Image.tiff") { UseShellExecute = true });
         }
     }
 }
