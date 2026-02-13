@@ -12,7 +12,7 @@ To export a page to a bitmap image, call the [PdfDocumentProcessor.CreateBitmap]
 To export a page to a multi-page tiff image, call one of the [PdfDocumentProcessor](https://docs.devexpress.com/OfficeFileAPI/DevExpress.Pdf.PdfDocumentProcessor.CreateTiff.overloads) overloaded methods using, for example, the file path where the converted image will be located, the **largestEdgeLength** parameter measured in pixels and page numbers.
 
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=pdf-document-api-export-document-to-multi-page-tiff-and-bitmap&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=pdf-document-api-export-document-to-multi-page-tiff-and-bitmap&~~~was_helpful=no)
 
